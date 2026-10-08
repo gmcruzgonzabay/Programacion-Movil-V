@@ -1,0 +1,84 @@
+/*Selectores de etiquetas*/
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+    color: darkorange;
+    font-size: 40px;
+    text-align: center;
+    
+}
+p{
+    color:grey;
+    font-size: 20px;
+}
+/*
+button{
+    background-color: green;
+    color: white;
+}
+*/
+
+.boton1{
+    background-color: darkorange;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    /*margin: 50px;*/
+    margin-right: 20px;
+    margin-left: 20px;
+    border:none;
+    border-radius: 17px;
+    cursor: pointer;
+
+}
+.boton1:hover{
+    background-color: darkcyan;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px gray;
+    /*transform: scale(1.1); Va aumentar el 110% de su tamaño original*/
+}
+
+.boton2{
+    background-color:dodgerblue;
+    color: white;
+}
+.boton3{
+    background-color:darksalmon;
+    color: white;
+}
+
+/*Mmodificar la imagen*/
+
+img{
+    width: 200px;
+    border-radius: 20%;
+    object-fit:cover;
+    
+  
+    transform: scale(1.2);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
