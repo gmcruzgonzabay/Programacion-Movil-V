@@ -38,6 +38,9 @@ const ImagenesScreen({super.key});
         
         SizedBox(height: 40,),
 
+
+        FadeInImage(placeholder: '', image:'https://picsum.photos/300/200' )
+
          
           ],
          ),
