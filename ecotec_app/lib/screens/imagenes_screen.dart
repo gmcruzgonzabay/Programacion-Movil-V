@@ -39,7 +39,14 @@ const ImagenesScreen({super.key});
         SizedBox(height: 40,),
 
 
-        FadeInImage(placeholder: '', image:'https://picsum.photos/300/200' )
+        FadeInImage.assetNetwork(
+          placeholder: 'assets/gif/jar-loading.gif',
+        
+         image:'https://picsum.photos/300/200' ,
+         width: 300,
+         height: 200,
+         fit: BoxFit.cover,
+         )
 
          
           ],
