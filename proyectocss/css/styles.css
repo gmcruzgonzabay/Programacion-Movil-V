@@ -34,7 +34,7 @@ button{
     border-radius: 17px;
     cursor: pointer;
 
-}
+}   
 .boton1:hover{
     background-color: darkcyan;
     transform: scale(1.1);

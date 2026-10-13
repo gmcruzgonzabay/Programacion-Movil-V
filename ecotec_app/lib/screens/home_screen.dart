@@ -1,3 +1,4 @@
+import 'package:ecotec_app/screens/imagenes_screen.dart';
 import 'package:ecotec_app/screens/texto_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,15 +22,28 @@ class HomeScreen extends StatelessWidget {
             subtitle: Text('Este widget crea texto'),
             onTap: () {
               debugPrint('Navegando a la siguiente pantalla');
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>TextoScreen()));
-            },
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TextoScreen()),
+              );
 
+              debugPrint('Navego siguiente pantalla');
+            },
           ),
 
           ListTile(
             leading: Icon(Icons.image),
             title: Text('Widget de Imagenes'),
             trailing: Icon(Icons.arrow_forward),
+            onTap: () {
+              debugPrint('Navegando a la pantalla de imagenes');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ImagenesScreen()),
+              );
+
+              debugPrint('Navego siguiente pantalla');
+            },
           ),
 
           ListTile(
