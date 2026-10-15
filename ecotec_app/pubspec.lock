@@ -152,6 +152,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  smooth_avatar:
+    dependency: "direct main"
+    description:
+      name: smooth_avatar
+      sha256: "8a7a0a9dff84b8835f530043e2eccaad7a1214922bf1d1fe3b909d9249915056"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.3"
   source_span:
     dependency: transitive
     description:

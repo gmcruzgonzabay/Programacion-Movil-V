@@ -32,6 +32,7 @@ dependencies:
   cupertino_icons: ^2.0.0
   flutter:
     sdk: flutter
+  smooth_avatar: ^1.0.3
 
 dev_dependencies:
   flutter_lints: ^6.0.0
@@ -51,6 +52,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/gif/
+    - assets/persona.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
