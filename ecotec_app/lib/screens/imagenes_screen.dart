@@ -8,6 +8,52 @@ class ImagenesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Widgets de imagenes')),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(child:   
+             Center(
+               child: CircleAvatar(
+                  radius: 60,
+                  backgroundColor: Colors.blue,
+                  //  backgroundImage: NetworkImage('https://picsum.photos/300/300'),
+                  backgroundImage: AssetImage('assets/persona.jpeg',),
+                ),
+             ),
+              
+              
+              
+              ),
+
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Perfil'),
+              onTap: () {},
+            ),
+             ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Perfil'),
+              onTap: () {},
+            ),
+             ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Perfil'),
+              onTap: () {},
+            ),
+             ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Perfil'),
+              onTap: () {},
+            ),
+
+            SizedBox(height: 50,),
+
+
+                   Text('Version 1.1.0'),
+          ],
+        ),
+      ),
+
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -63,6 +109,16 @@ class ImagenesScreen extends StatelessWidget {
                 borderColor: Colors.blue,
                 borderWidth: 5,
               ),
+
+              SizedBox(height: 40),
+
+              Text('Opacidad en imagenes'),
+              SizedBox(height: 40),
+
+              Opacity(opacity: 0.6, child: Image.asset('assets/persona.jpeg')),
+
+
+       
             ],
           ),
         ),
