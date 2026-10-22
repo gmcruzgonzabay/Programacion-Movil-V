@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+
+
+	<key>NSCameraUsageDescription</key>
+	<string>Tomar una foto para tu perfil.</string>
+
+	<key>NSContactsUsageDescription</key>
+	<string>Mostrar los contactos que deseas consultar.</string>
+
+
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>

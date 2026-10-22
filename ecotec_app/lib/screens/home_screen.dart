@@ -1,3 +1,4 @@
+import 'package:ecotec_app/screens/forms_screen.dart';
 import 'package:ecotec_app/screens/imagenes_screen.dart';
 import 'package:ecotec_app/screens/texto_screen.dart';
 import 'package:flutter/material.dart';
@@ -57,6 +58,26 @@ class HomeScreen extends StatelessWidget {
             title: Text('Botones'),
             trailing: Icon(Icons.arrow_forward),
           ),
+
+
+ ListTile(
+            leading: Icon(Icons.border_outer_outlined),
+            title: Text('Formularios'),
+            trailing: Icon(Icons.arrow_forward),
+   onTap: () {
+              debugPrint('Navegando a la pantalla de formularios');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FormsScreen()),
+              );
+
+              debugPrint('Navego siguiente pantalla');
+            },
+
+          ),
+
+
+
 
           Text('Botones'),
         ],
