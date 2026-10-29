@@ -1,8 +1,5 @@
 
-import 'package:ecotec_app/screens/forms_screen.dart';
-import 'package:ecotec_app/screens/home_screen.dart';
-import 'package:ecotec_app/screens/imagenes_screen.dart';
-import 'package:ecotec_app/screens/texto_screen.dart';
+import 'package:ecotec_app/screens/screens.dart';
 import 'package:flutter/widgets.dart';
 
 class AppRoutes {
