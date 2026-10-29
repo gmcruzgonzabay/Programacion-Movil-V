@@ -32,7 +32,12 @@ const TextoScreen({super.key});
          
                   
                   ,),
-                )
+                ),
+
+                ElevatedButton(onPressed: (){
+
+                  Navigator.pop(context); // me sirver para regresar a la pantalla anterior
+                }, child: Text('Regresar'))
 
           ],
          ),
