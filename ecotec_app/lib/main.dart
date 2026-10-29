@@ -1,3 +1,4 @@
+import 'package:ecotec_app/routes/app_routes.dart';
 import 'package:ecotec_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
-      initialRoute: '',
+     // home: HomeScreen(), deseactivo esta propiedad debido a que uso ahora rutas
+      initialRoute: AppRoutes.inicio,
+      routes: AppRoutes.rutas,
    // routes: ,
     );
   }

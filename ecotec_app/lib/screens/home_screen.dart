@@ -1,3 +1,4 @@
+import 'package:ecotec_app/routes/app_routes.dart';
 import 'package:ecotec_app/screens/forms_screen.dart';
 import 'package:ecotec_app/screens/imagenes_screen.dart';
 import 'package:ecotec_app/screens/texto_screen.dart';
@@ -22,12 +23,14 @@ class HomeScreen extends StatelessWidget {
             trailing: Icon(Icons.arrow_forward),
             subtitle: Text('Este widget crea texto'),
             onTap: () {
-              debugPrint('Navegando a la siguiente pantalla');
-              Navigator.push(
+              //  debugPrint('Navegando a la siguiente pantalla');
+              /*     Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => TextoScreen()),
               );
+ */
 
+              Navigator.pushNamed(context, AppRoutes.texto);
               debugPrint('Navego siguiente pantalla');
             },
           ),
@@ -37,11 +40,13 @@ class HomeScreen extends StatelessWidget {
             title: Text('Widget de Imagenes'),
             trailing: Icon(Icons.arrow_forward),
             onTap: () {
-              debugPrint('Navegando a la pantalla de imagenes');
-              Navigator.push(
+              //  debugPrint('Navegando a la pantalla de imagenes');
+              /*   Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ImagenesScreen()),
-              );
+              ); */
+
+              Navigator.pushNamed(context, AppRoutes.imagenes);
 
               debugPrint('Navego siguiente pantalla');
             },
@@ -59,25 +64,22 @@ class HomeScreen extends StatelessWidget {
             trailing: Icon(Icons.arrow_forward),
           ),
 
-
- ListTile(
+          ListTile(
             leading: Icon(Icons.border_outer_outlined),
             title: Text('Formularios'),
             trailing: Icon(Icons.arrow_forward),
-   onTap: () {
-              debugPrint('Navegando a la pantalla de formularios');
+            onTap: () {
+              /*  debugPrint('Navegando a la pantalla de formularios');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => FormsScreen()),
               );
+ */
 
+              Navigator.pushNamed(context, AppRoutes.formularios);
               debugPrint('Navego siguiente pantalla');
             },
-
           ),
-
-
-
 
           Text('Botones'),
         ],
