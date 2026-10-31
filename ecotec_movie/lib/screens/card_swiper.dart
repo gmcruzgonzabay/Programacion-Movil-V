@@ -24,12 +24,20 @@ class CardSwiper extends StatelessWidget {
         layout: SwiperLayout.STACK,
     
         itemBuilder: (_, index) {
-          return FadeInImage(
-            width: size.width,
-            height: size.height,
-            fit: BoxFit.cover,
-            placeholder: AssetImage('assets/no-image.jpeg'),
-            image: NetworkImage('https://picsum.photos/300/400'),
+          return GestureDetector(
+            onTap: () {
+              
+            },
+            child: ClipRRect(
+              borderRadius: BorderRadiusGeometry.circular(20),
+              child: FadeInImage(
+                width: size.width,
+                height: size.height,
+                fit: BoxFit.cover,
+                placeholder: AssetImage('assets/no-image.jpeg'),
+                image: NetworkImage('https://picsum.photos/300/400'),
+              ),
+            ),
           );
         },
       ),

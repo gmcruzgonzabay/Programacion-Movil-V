@@ -9,11 +9,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 50,),
-          CardSwiper(size: size),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 50,),
+            CardSwiper(size: size),
+              CardSwiper(size: size),
+                CardSwiper(size: size),
+          ],
+        ),
       ),
     );
   }
