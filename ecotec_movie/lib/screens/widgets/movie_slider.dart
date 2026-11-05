@@ -8,7 +8,7 @@ class MovieSlider extends StatelessWidget {
     return Container(
       width: double.infinity, //todo el ancho de la pantalla
       height: 500,
-      color: Colors.amber,
+    
       child: Column(
         children: [
           Padding(
@@ -30,15 +30,31 @@ class MovieSlider extends StatelessWidget {
                   margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   width: 130,
                   height: 190,
-                  color: Colors.green,
+                 
                   child: Column(
                     children: [
-                      FadeInImage(
-                        placeholder: AssetImage('assets/no-image.jpeg'),
-                        image: NetworkImage(
-                          'https://picsum.photos/130/100?random=$index',
+                      GestureDetector(
+                        onTap: ()=>Navigator.pushNamed(context, 'details',arguments: 'movie-instance'),
+                        child: ClipRRect(
+                          borderRadius: BorderRadiusGeometry.circular(15),
+                          child: FadeInImage(
+                            placeholder: AssetImage('assets/no-image.jpeg'),
+                            image: NetworkImage(
+                              'https://picsum.photos/130/100?random=$index',
+                            ),
+                          
+                              ),
                         ),
                       ),
+
+                          Text(
+                            'Et officia ex aliqua laborum et magna deserunt minim adipisicing velit aliquip eu aute. Et officia ex aliqua laborum et magna deserunt minim adipisicing velit aliquip eu aute.',
+
+                            overflow:TextOverflow.fade,
+                            maxLines: 2,
+                          
+                          
+                          )
                     ],
                   ),
                 );
