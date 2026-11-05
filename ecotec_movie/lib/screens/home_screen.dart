@@ -1,6 +1,7 @@
+import 'package:ecotec_movie/screens/widgets/movie_slider.dart';
 import 'package:flutter/material.dart';
 
-import 'card_swiper.dart';
+import 'widgets/card_swiper.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,8 +15,12 @@ class HomeScreen extends StatelessWidget {
           children: [
             SizedBox(height: 50,),
             CardSwiper(size: size),
-              CardSwiper(size: size),
-                CardSwiper(size: size),
+           SizedBox(height: 80,),
+
+           MovieSlider(),
+
+            
+                
           ],
         ),
       ),
