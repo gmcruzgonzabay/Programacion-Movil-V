@@ -1,7 +1,10 @@
+import 'package:ecotec_movie/models/movie.dart';
 import 'package:flutter/material.dart';
 
 class MovieSlider extends StatelessWidget {
-  const MovieSlider({super.key});
+
+  final List<Movie> movies;
+  const MovieSlider({super.key, required this.movies});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,7 @@ class MovieSlider extends StatelessWidget {
             height: 190,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 20,
+              itemCount: movies.length,
 
               itemBuilder: (_, int index) {
                 return Container(

@@ -1,14 +1,20 @@
+import 'package:ecotec_movie/providers/movies_provider.dart';
 import 'package:ecotec_movie/screens/widgets/movie_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'widgets/card_swiper.dart';
 
 class HomeScreen extends StatelessWidget {
+
+
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+
+    final moviesProvider=Provider.of<MoviesProvider>(context);
+debugPrint(moviesProvider.onDisplayMovie.toString());    final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -17,7 +23,7 @@ class HomeScreen extends StatelessWidget {
             CardSwiper(size: size),
            SizedBox(height: 80,),
 
-           MovieSlider(),
+           MovieSlider(movies: moviesProvider.onDisplayMovie),
           
 
             
