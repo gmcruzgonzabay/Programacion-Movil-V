@@ -6,28 +6,22 @@ import 'package:provider/provider.dart';
 import 'widgets/card_swiper.dart';
 
 class HomeScreen extends StatelessWidget {
-
-
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    final moviesProvider=Provider.of<MoviesProvider>(context);
-debugPrint(moviesProvider.onDisplayMovie.toString());    final size = MediaQuery.of(context).size;
+    final moviesProvider = Provider.of<MoviesProvider>(context);
+    debugPrint(moviesProvider.onDisplayMovie.toString());
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 50,),
-            CardSwiper(size: size),
-           SizedBox(height: 80,),
+            SizedBox(height: 50),
+            CardSwiper(size: size, movies: moviesProvider.onDisplayMovie),
+            SizedBox(height: 80),
 
-           MovieSlider(movies: moviesProvider.onDisplayMovie),
-          
-
-            
-                
+            MovieSlider(movies: moviesProvider.onDisplayMovie),
           ],
         ),
       ),
